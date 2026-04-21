@@ -1,0 +1,270 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #9974d1;
+    line-height: 1.6;
+    background-color: #ebe3e3; 
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #646ed5; 
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+
+header {
+    background-color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(122, 67, 174, 0.05);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #926de3; 
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #974dc1;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9a6eaf; 
+}
+
+
+.hero {
+    background: url('placeholder_hero_image.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(142, 68, 195, 0.4);
+}
+
+.hero * { 
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.2em;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(142, 76, 151, 0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #9d5fd6; 
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+}
+
+.cta-button:hover {
+    background-color: #aa44dd;
+    transform: translateY(-2px);
+}
+
+
+
+section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+.promise-section {
+    background-color: #fff;
+    text-align: center;
+}
+
+.promise-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.promise-cards .card {
+    flex-basis: 30%;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.promise-cards .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.promise-cards .card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: sepia(0.5);
+}
+
+
+.product-section {
+    background-color: #f7f7f7;
+}
+
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: #6b3d7c;
+}
+
+.product-card .description {
+    font-size: 0.9em;
+    color: #6a31a7;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #8551af;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #7d54b3;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #7d54b3;
+}
+
+
+
+.customer-section {
+    background-color: #f0ede9; 
+    text-align: center;
+}
+
+.customer-quote {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 5px solid #8639b9;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.customer-quote p {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.customer-quote p2 {
+    display: block;
+    font-style: normal;
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+
+footer {
+    background-color: #b194d2;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
